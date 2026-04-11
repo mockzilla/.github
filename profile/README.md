@@ -28,6 +28,9 @@ on: [push, pull_request]
 jobs:
   simulate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - uses: mockzilla/actions/portable@main
