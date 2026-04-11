@@ -1,0 +1,79 @@
+# Mockzilla
+
+**Hosted API simulations from your OpenAPI specs.**
+
+Push to GitHub, get a dedicated simulation URL in seconds.<br/>
+No config, no servers, no accounts to create.
+
+## How it works
+
+```
+You push code
+  -> GitHub Action packages your OpenAPI specs
+  -> Mockzilla provisions a dedicated simulation in your nearest AWS region
+  -> Live at api.mockzilla.org/gh/{org}/{repo}/{ref}/
+```
+
+Every branch gets its own URL. Every push updates it.
+When the PR closes, the simulation is torn down automatically.
+
+## Quick start
+
+Add this to `.github/workflows/mockzilla.yml`:
+
+```yaml
+name: Mockzilla
+on: [push, pull_request]
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mockzilla/actions/portable@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          spec-dir: openapi  # path to your OpenAPI specs
+```
+
+Push. That's it. No API keys, no secrets, no signup.
+
+Or start from a template:
+[**connexions-portable-template**](https://github.com/mockzilla/connexions-portable-template)
+/ [**connexions-codegen-template**](https://github.com/mockzilla/connexions-codegen-template)
+
+## Run locally
+
+```bash
+brew tap mockzilla/tap
+brew install connexions
+connexions https://petstore3.swagger.io/api/v3/openapi.json
+```
+
+## What you get
+
+- **Spec-driven simulation** that matches your API contract exactly,
+  with realistic response generation
+- **PR environments** where every pull request gets its own URL
+- **24 AWS regions** with latency-based routing
+- **Two modes**: portable (just specs) or codegen (typed Go handlers
+  with custom logic)
+- **Rate limit headers** on every response for integration testing
+- **API key auth** to protect simulations when needed
+
+## Repos
+
+| Repo | What it does |
+|---|---|
+| [actions](https://github.com/mockzilla/actions) | GitHub Action for portable and codegen modes |
+| [connexions](https://github.com/mockzilla/connexions) | OpenAPI mock engine powering all simulations |
+| [connexions-portable-template](https://github.com/mockzilla/connexions-portable-template) | Starter template for portable mode |
+| [connexions-codegen-template](https://github.com/mockzilla/connexions-codegen-template) | Starter template for codegen mode |
+| [homebrew-tap](https://github.com/mockzilla/homebrew-tap) | `brew install mockzilla/tap/connexions` |
+
+
+## Links
+
+- [mockzilla.org](https://mockzilla.org)
+- [Features](https://mockzilla.org/features)
+- [Contact](https://mockzilla.org/contact)
