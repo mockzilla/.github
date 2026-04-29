@@ -50,7 +50,7 @@ Or start from a template:
 ```bash
 brew tap mockzilla/tap
 brew install mockzilla
-connexions https://petstore3.swagger.io/api/v3/openapi.json
+mockzilla https://petstore3.swagger.io/api/v3/openapi.json
 ```
 
 ## What you get
@@ -66,13 +66,13 @@ connexions https://petstore3.swagger.io/api/v3/openapi.json
 
 ## Repos
 
-| Repo | What it does |
-|---|---|
-| [actions](https://github.com/mockzilla/actions) | GitHub Action for portable and codegen modes |
-| [connexions](https://github.com/mockzilla/connexions) | OpenAPI mock engine powering all simulations |
-| [connexions-portable-template](https://github.com/mockzilla/connexions-portable-template) | Starter template for portable mode |
-| [connexions-codegen-template](https://github.com/mockzilla/connexions-codegen-template) | Starter template for codegen mode |
-| [homebrew-tap](https://github.com/mockzilla/homebrew-tap) | `brew install mockzilla/tap/connexions` |
+| Repo                                                                                    | What it does |
+|-----------------------------------------------------------------------------------------|---|
+| [actions](https://github.com/mockzilla/actions)                                         | GitHub Action for portable and codegen modes |
+| [Mockzilla](https://github.com/mockzilla/mockzilla)                                     | OpenAPI mock engine powering all simulations |
+| [mockzilla-portable-template](https://github.com/mockzilla/mockzilla-portable-template) | Starter template for portable mode |
+| [mockzilla-codegen-template](https://github.com/mockzilla/mockzilla-codegen-template)   | Starter template for codegen mode |
+| [homebrew-tap](https://github.com/mockzilla/homebrew-tap)                               | `brew install mockzilla/tap/mockzilla` |
 
 
 ## Links
