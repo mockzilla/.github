@@ -42,14 +42,14 @@ jobs:
 Push. That's it. No API keys, no secrets, no signup.
 
 Or start from a template:
-[**connexions-portable-template**](https://github.com/mockzilla/connexions-portable-template)
-/ [**connexions-codegen-template**](https://github.com/mockzilla/connexions-codegen-template)
+[**mockzilla-portable-template**](https://github.com/mockzilla/mockzilla-portable-template)
+/ [**mockzilla-codegen-template**](https://github.com/mockzilla/mockzilla-codegen-template)
 
 ## Run locally
 
 ```bash
 brew tap mockzilla/tap
-brew install connexions
+brew install mockzilla
 connexions https://petstore3.swagger.io/api/v3/openapi.json
 ```
 
