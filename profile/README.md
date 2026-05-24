@@ -2,7 +2,7 @@
 
 **Hosted API simulations from your OpenAPI specs.**
 
-Push to GitHub, get a dedicated simulation URL in seconds.<br/>
+Push to GitHub, get a dedicated simulation URL in seconds.
 No config, no servers, no accounts to create.
 
 ## How it works
@@ -55,28 +55,27 @@ mockzilla https://petstore3.swagger.io/api/v3/openapi.json
 
 ## What you get
 
-- **Spec-driven simulation** that matches your API contract exactly,
-  with realistic response generation
+- **Spec-driven simulation** that matches your API contract exactly, with realistic response generation
 - **PR environments** where every pull request gets its own URL
 - **24 AWS regions** with latency-based routing
-- **Two modes**: portable (just specs) or codegen (typed Go handlers
-  with custom logic)
+- **Two modes**: portable (just specs) or codegen (typed Go handlers with custom logic)
 - **Rate limit headers** on every response for integration testing
 - **API key auth** to protect simulations when needed
 
 ## Repos
 
-| Repo                                                                                    | What it does |
-|-----------------------------------------------------------------------------------------|---|
-| [actions](https://github.com/mockzilla/actions)                                         | GitHub Action for portable and codegen modes |
-| [Mockzilla](https://github.com/mockzilla/mockzilla)                                     | OpenAPI mock engine powering all simulations |
+| Repo | What it does |
+|------|--------------|
+| [mockzilla](https://github.com/mockzilla/mockzilla) | OpenAPI mock engine powering all simulations |
+| [mockzilla-mcp](https://github.com/mockzilla/mockzilla-mcp) | MCP server for Claude Code, Cursor, and Gemini CLI |
+| [actions](https://github.com/mockzilla/actions) | GitHub Action for portable and codegen modes |
 | [mockzilla-portable-template](https://github.com/mockzilla/mockzilla-portable-template) | Starter template for portable mode |
-| [mockzilla-codegen-template](https://github.com/mockzilla/mockzilla-codegen-template)   | Starter template for codegen mode |
-| [homebrew-tap](https://github.com/mockzilla/homebrew-tap)                               | `brew install mockzilla/tap/mockzilla` |
-
+| [mockzilla-codegen-template](https://github.com/mockzilla/mockzilla-codegen-template) | Starter template for codegen mode |
+| [homebrew-tap](https://github.com/mockzilla/homebrew-tap) | `brew install mockzilla/tap/mockzilla` |
 
 ## Links
 
 - [mockzilla.org](https://mockzilla.org)
-- [Features](https://mockzilla.org/features)
-- [Contact](https://mockzilla.org/contact)
+- [Install](https://mockzilla.org/en/install)
+- [Pricing](https://mockzilla.org/en/pricing)
+- [Contact](https://mockzilla.org/en/contact)
