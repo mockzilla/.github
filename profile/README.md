@@ -77,5 +77,4 @@ mockzilla https://petstore3.swagger.io/api/v3/openapi.json
 
 - [mockzilla.org](https://mockzilla.org)
 - [Install](https://mockzilla.org/en/install)
-- [Pricing](https://mockzilla.org/en/pricing)
 - [Contact](https://mockzilla.org/en/contact)
