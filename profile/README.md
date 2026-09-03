@@ -33,7 +33,7 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
-      - uses: mockzilla/actions/portable@main
+      - uses: mockzilla/actions@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           spec-dir: openapi  # path to your OpenAPI specs
